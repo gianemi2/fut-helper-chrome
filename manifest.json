@@ -1,0 +1,50 @@
+{
+  "name": "FUT20 Buyer Manager",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Gestisce i captcha e controlla le richieste ai server EA.",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    "src/js/*"
+  ],
+  "background": {
+    "page": "src/html/background.html",
+    "persistent": true
+  },
+  "permissions": [
+    "notifications",
+    "webRequest",
+    "storage",
+    "https://www.easports.com/fifa/ultimate-team/web-app/",
+    "https://utas.external.s2.fut.ea.com/",
+    "https://futbin-helper.herokuapp.com/"
+  ],
+  "browser_action": {
+    "default_popup": "src/options/options.html",
+    "default_title": "OYO Rooms Finder"
+  },
+  "content_scripts": [{
+      "matches": [
+        "https://www.easports.com/fifa/ultimate-team/web-app/",
+        "https://utas.external.s2.fut.ea.com/"
+      ],
+      "css": [
+        "src/css/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.easports.com/fifa/ultimate-team/web-app/",
+        "https://utas.external.s2.fut.ea.com/"
+      ],
+      "js": [
+        "src/js/content_script.js"
+      ]
+    }
+  ]
+}

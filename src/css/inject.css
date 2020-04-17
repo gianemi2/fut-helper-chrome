@@ -1,0 +1,65 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+.runningDisplay {
+    position: fixed;
+    top: 10px;
+    z-index: 999;
+    right: 10px;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+.sleeping {
+    background-color: orange;
+    color: white;
+}
+
+.search-node {
+    display: flex;
+}
+
+.alt-btn-standard {
+    background-color: #ddd;
+    color: #0b1218;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    box-sizing: border-box;
+    display: block;
+    font-family: UltimateTeamCondensed,
+        sans-serif;
+    font-size: 1.6em;
+    overflow: hidden;
+    padding: 0 1rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.alt-btn-standard.alt-call-to-action {
+    background-color: #fc4554;
+    color: #f2f2f2;
+}
+
+.resultList {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.resultItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 15px;
+}
+
+.resultItem:hover {
+    background-color: #F5F5F5;
+}

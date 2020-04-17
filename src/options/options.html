@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>My Test Extension Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="title">Fut Webapp Helper</h1>
+        <h6>Version: <span id="manifestVersion"></span></h6>
+    </div>
+    <div class="content">
+        <div class="field js-field">
+            <label for="username">Scegli il tuo nome utente.</label>
+            <input type="text" id="username" name="username">
+            <small>Il nome utente verrà utilizzato per eventuali notifiche su Telegram.</small>
+        </div>
+
+        <div class="footer">
+            <button id="save">Save</button>
+        </div>
+    </div>
+    <div id="status" class="hidden"></div>
+    <script src="options.js" type="module"></script>
+</body>
+
+</html>
